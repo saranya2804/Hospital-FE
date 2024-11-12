@@ -1,0 +1,78 @@
+body {
+    background: 
+        linear-gradient(to right, rgba(10, 61, 98, 0.8), rgba(255, 255, 255, 0.8)), /* Dark blue to white gradient with opacity */
+        url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8yNV9zaW1wbGVfM2RfaWxsdXN0cmF0aW9uX29mX2FfcmVjb3Zlcnlfcm9vbV93aV80ZjhkNDIwNC02N2I4LTQwMDQtYTBlNy05YjljMjIyMzE2ZGVfMS5qcGc.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Center content vertically and horizontally */
+}
+
+.login-form-container {
+    width: 300px;
+    height: 300px; /* Make the container square */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content within the square container */
+}
+
+h1 {
+    margin: 0; /* Remove margin to eliminate space */
+    padding: 0; /* Optional: Ensure no padding is added */
+    color: white;
+    
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 5px;
+}
+
+.login-input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-color: #266bb9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px auto 0;
+}
+
+.login-button:hover {
+    background-color: #4f89c4;
+}

@@ -1,0 +1,219 @@
+/* Main Dashboard Container */
+.doctor-dashboard {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 45px; /* Offset for fixed navbar */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 180px; /* Slightly increased width */
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Sidebar Menu Items */
+.menu-item {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #666;
+}
+
+/* Content Area */
+.content {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;    
+}
+
+/* Appointments Section Styling */
+/* Appointments Section */
+.appointments-box {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+   width:500px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    max-height: 100vh;
+    height: 500px;
+}
+
+/* Individual Appointment Item */
+.appointment-item {
+    margin: 4px 0;
+    padding: 6px 8px; /* Reduced padding */
+    background-color: #333;
+    border-radius: 4px;
+    width: 90%; /* Adjusted width */
+    text-align: center;
+    min-height: 50px; /* Reduced height */
+    font-size: 0.9rem; /* Smaller font size */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.appointment-item span {
+    color: green;
+    margin-top: 4px;
+    display: block;
+}
+
+
+/* Available Dates Section */
+.available-dates-section {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%; /* Takes full content width */
+    max-width: 280px; /* Limited width for balance */
+    max-height: 300px; /* Limited height */
+    overflow-y: auto;
+    font-size: 0.85rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.date-input-container, .time-input-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.date-input, .time-input {
+    padding: 6px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    border: 1px solid #555;
+    width: 70%;
+}
+
+.available-dates-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.available-date-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.add-time-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-time-button {
+    background: red;
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Set a fixed height for the navbar */
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Horizontal padding */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensures navbar stays on top */
+}
+
+/* Title in the navbar */
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Notification icon container on the right */
+.notification-icon-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.notification-icon {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Content Wrapper to avoid overlap */
+.content {
+    padding-top: 60px; /* Offset to prevent overlap with fixed navbar */
+}
+/* Sidebar */
+.sidebar {
+    display: none;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 1040;
+}
+
+.sidebar.show {
+    display: block;
+}
+
+/* Notifications dropdown */
+.notifications-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1050;
+}
+/* Reduce margin for navbar toggle button */
+.navbar-toggler {
+    margin-right: 5px; /* Reduced margin from the right */
+    padding: 0.25rem 0.5rem; /* Optional: reduce padding to make the button smaller */
+}
+
+/* Adjust the margin of the navbar toggle icon inside the button */
+.navbar-toggler-icon {
+    margin: 0; /* Remove any default margin */
+}
+

@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  margin-right: 5px;
+}
+
+input {
+  padding: 8px;
+  width: 100%; /* Full width of container */
+  max-width: 350px; /* Increased max width */
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #266bb9; /* Change to light blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+}
+
+button:hover {
+  background-color: #4f89c4;
+   /* Slightly darker shade for hover effect */
+}
+
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #d0e8f2; /* Light blue background color */
+}
+
+.form-container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: black; /* Inside box background */
+}
+
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+/* Inline styling for roles */
+.role-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none;
+  padding: 0;
+}
+
+.role-container label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.form-container{
+  height: 650px;
+}
+label{
+  margin: 5px;
+}
+input{
+  margin: 5px;
+}

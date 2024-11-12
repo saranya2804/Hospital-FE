@@ -1,0 +1,187 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Main container for the entire layout */
+.patient-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+h1{
+  margin-bottom: auto;
+}
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav ul li {
+  display: inline;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Navbar links for mobile */
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links.active {
+  display: block;
+}
+
+.navbar-links.active ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main dashboard layout */
+.dashboard-layout {
+  display: flex;
+  flex: 1;
+}
+
+/* Content Section */
+.content {
+  flex: 1;
+  padding: 20px;
+  
+  width: 500px;
+  
+}
+
+/* Book Appointment Box */
+.appointment-box {
+  width: 300px;
+  height: 500px;
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 5px 50px 50px; /* Adjusted top padding to reduce whitespace */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  margin: 0 auto;
+}
+
+.appointment-box h2 {
+  text-align: center;
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 5px;
+  color: #293c6d;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Appointment Form Styles */
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  height: 300px;
+}
+
+/* Form Group Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  
+}
+
+/* Input, Select, and Label Styling */
+label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #34495e;
+}
+
+select, input {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Submit Button Styling */
+button.submit-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  width: 100%;
+  box-sizing:border-box;
+  
+  
+}
+
+button.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .navbar-links.active {
+      display: flex;
+      padding: 10px;
+      justify-content:space-around;
+  }
+
+  .navbar-links ul {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+  }
+
+  .navbar nav ul li {
+      display: flex;
+      justify-content: space-around;
+  }
+  .navbar{
+    display: flex;
+    justify-content:space-around;
+  }
+}
