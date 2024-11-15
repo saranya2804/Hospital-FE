@@ -30,7 +30,7 @@ h1 {
     margin: 0; /* Remove margin to eliminate space */
     padding: 0; /* Optional: Ensure no padding is added */
     color: white;
-    
+    margin-bottom: 0px;
 }
 
 .login-form {
@@ -75,4 +75,25 @@ h1 {
 
 .login-button:hover {
     background-color: #4f89c4;
+}
+.role-selection {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    height: 10px;
+    display:flex ;
+    align-items: center;
+}
+
+.role-selection legend {
+    font-weight: bold;
+    color: white;
+    
+}
+
+.role-selection div {
+    margin: 5px 0;
+    height: 15px;
 }
